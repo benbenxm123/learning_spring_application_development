@@ -7,7 +7,6 @@ package org.packt.Spring.chapter2.callbacks.xml;
  */
 public class NewEmployeeServiceImp implements EmployeeService {
 
-	@Override
 	public Long generateEployeeID() {
 
 		return System.currentTimeMillis();

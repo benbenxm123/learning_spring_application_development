@@ -11,21 +11,18 @@ import org.springframework.beans.factory.InitializingBean;
 public class EmployeeServiceImp implements EmployeeService, InitializingBean,
 		DisposableBean {
 
-	@Override
 	public Long generateEployeeID() {
 
 		return System.currentTimeMillis();
 
 	}
 
-	@Override
 	public void destroy() throws Exception {
 		
 		System.out.println("Employee destroy... ");
 
 	}
 
-	@Override
 	public void afterPropertiesSet() throws Exception {
 		
 		System.out.println("Employee afterPropertiesSet... ");
